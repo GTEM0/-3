@@ -1,0 +1,37 @@
+  interface SomethingDoI {
+         public void do();      
+  }
+ 
+
+public class LibA{
+   
+    public void forStart()  {
+         for( int i=1; i<=5; i++){
+              System.out.println("★");
+        }
+   }
+
+
+  // 반복할 문자를 줘
+   public void forCharacter(  char  something ) {
+        for( int i=1; i<=5; i++){
+              System.out.println( something );
+        }
+    }
+
+
+  // 코드를 줘 
+  // 내가 반복해 줄께
+  // 매개변수로 무엇을 받아야 하나요?
+  
+   
+  public void forSomethingDo(  SomethingDoI  somethingDo  ){
+       for( int i=1; i<=5; i++){
+                   somethingDo.do();
+       }
+   }
+}
+ 
+
+
+ 

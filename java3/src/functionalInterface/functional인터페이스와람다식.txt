@@ -1,0 +1,59 @@
+
+
+interface Runnable{
+     void run () ;
+}
+
+
+interface Consumer<T>{
+
+   void accept( T t );
+}
+
+
+interface Supplier<T>{
+
+    T  get();
+}
+
+
+interface Function<T,R>{
+   R  apply( T t );
+
+}
+
+interface Predicate<T>{
+   boolean test ( T t);
+}
+
+
+// 
+
+ interface  BiPredicate<T, U>{
+       boolean test( T t, U u);
+ } 
+ 
+ interface  BiConsumer<T, U>{ 
+        void accept( T t, U u);
+ }
+ 
+ 
+ interface BiFunction<T, U, R> {
+    R apply ( T t, U u);
+ }
+
+
+기본형 특화 인터페이스  
+
+ 람다식 : 익명함수를 지칭함 
+ Runnable r  = () ->  System.out.println("hi 람다");
+ Consumer<String>  c =  food  -> System.out.println( "제일 좋아하는 음식!!!"+ food );
+ Supplier<Integer> s =   ()  ->  new Random().nextInt();
+ Predicate<Integer> p =  su ->   su %2 ==0 ;
+ 
+ 
+  
+
+
+
+
