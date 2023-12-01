@@ -23,7 +23,8 @@ public class LibA{
   // 코드를 줘 
   // 내가 반복해 줄께
   // 매개변수로 무엇을 받아야 하나요?
-  
+  // 수행할 코드를 매개변수로 받고 싶다면 매서드, 함수 생각할 수 있다
+	// 인터페이스로 구현해야 할 매서드만 정한다
    
   public void forSomethingDo(  SomethingDoI  somethingDo  ){
        for( int i=1; i<=5; i++){
