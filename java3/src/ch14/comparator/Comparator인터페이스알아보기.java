@@ -3,7 +3,6 @@ package ch14.comparator;
 public class Comparator인터페이스알아보기 {
 
 	public static void main(String[] args) {
-
 			 /*interface Comparator<T>{
 				int	compare(T o1, T o2) 
 				static <T,U extends Comparable<? super U>> Comparator<T>	comparing(Function<? super T,? extends U> keyExtractor)

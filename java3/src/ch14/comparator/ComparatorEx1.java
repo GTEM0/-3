@@ -13,19 +13,14 @@ class ComparatorEx1 {
 							new Student("소자바", 1, 200),
 							new Student("나자바", 3, 290),
 							new Student("감자바", 3, 180)
-						);
-	     
-	     
+						);     	     
 	     
 	    
 	     //  Comparator인터페이스에 이미 구현된 매서드(default 매서드가 제공된다 ) 
-	     //  Comparator인터페이스에 디폴트매서드 사용해보기
-	     
+	     //  Comparator인터페이스에 디폴트매서드 사용해보기	     
 	     studentStream.sorted(Comparator.comparing(Student::getBan) // 반별 정렬
 			    	  .thenComparing(Comparator.naturalOrder()))    // 기본 정렬
 					  .forEach(System.out::println);
-	      
-	     
 	     
 	     
 	     /*

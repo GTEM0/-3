@@ -15,7 +15,6 @@ class ComparatorEx {
 		Arrays.sort(strArr,   new Comparator<>() {
 			@Override
 			public int compare(String o1, String o2) {
-				// TODO Auto-generated method stub
 				return  o2.compareTo(o1);
 			}}); // 역순 정렬
 		System.out.println("strArr=" + Arrays.toString(strArr));
